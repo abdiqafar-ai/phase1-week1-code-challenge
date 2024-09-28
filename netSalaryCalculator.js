@@ -1,8 +1,8 @@
 function calculateNetSalary(basicSalary, benefits) {
-    const PAYE = 0.35; 
-    const NHIF = 0.025; 
-    const NSSF = 0.06; 
-
+    const PAYE = 0.35; //35%
+    const NHIF = 0.025;//2.5% 
+    const NSSF = 0.06; //6%
+//to get the basic salary, calculate basics salary of the individual plus the benefits
     const grossSalary = basicSalary + benefits;
     const tax = grossSalary * PAYE;
     const nhifDeductions = grossSalary * NHIF;

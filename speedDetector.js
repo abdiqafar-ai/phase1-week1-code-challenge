@@ -1,8 +1,10 @@
 function checkSpeed(speed) {
+    //assign speed limit as 70;
     const speedLimit = 70;
     if (speed < speedLimit) {
         return "Ok";
     } else {
+        //demeritPoint should be speed - speed limit (70) divided by 5 
         const demeritPoints = Math.floor((speed - speedLimit) / 5);
         if (demeritPoints > 12) {
             return "License suspended";
